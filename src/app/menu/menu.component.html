@@ -1,0 +1,7 @@
+  <ul class="nav flex-column bg-dark sidebar">
+    <li class="nav-item" *ngFor="let nav of _navItems">
+      <a class="nav-link pr-5" [routerLink]=nav.path routerLinkActive="active">
+        <i class="mr-2" [ngClass]="nav.icon"></i>{{nav.title}}
+      </a>
+    </li>
+  </ul>

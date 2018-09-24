@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "extractCss": true,
             "outputPath": "dist/bootstrap",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/assets/styles/styles.scss"
             ],
             "scripts": []
           },
